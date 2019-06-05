@@ -20,9 +20,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
+	color: white;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,95 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 1000px;
+	background-color: @main-color;
 }
+// This is where my code starts
+@padding: 2.5rem;
+/*Yellow Colors
+@main-color: #AAA039;
+@dark-color: #554D00;
+@light-color: #D4CB6A;
+@white-color: #FFF7AA;
+*/
+//Blue Colors
+@main-color: #2E4272;
+@dark-color: #061539;
+@mid-color: #162856;
+@light-color: #4F618F;
+@white-color: #7887AB;
+@border: 2px dotted @white-color;
 
+.content{
+	padding-top: @padding;
+	// CHECK TO SEE IF THIS IS CORRECT
+	
+}
+.top-section{
+	width: 100%;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 1.5rem;
+	height: 280px;
+	background: @dark-color;
+	a{
+		display: inline;
+		color: white;
+		padding: 1rem;
+		border-bottom: @border;
+	}
+	a:link {
+		text-decoration: none;
+	}
+}
+@media( min-width: 800px){
+	nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.5rem;
+		height: 280px;
+		background: @dark-color;
+	}
+}
+.intro{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+		h1{
+			font-size: 3rem;
+			margin-left: 2;
+			margin-right: 0px auto;
+			 
+			}
+	
+}
+img{
+	display: block;
+	padding: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+@media(min-width: 800px){
+	img{
+	display: block;
+	padding: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	zoom: 1.4;
+	}
+}
+.bodee{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: @padding;
+}
