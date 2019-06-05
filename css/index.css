@@ -90,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   color: white;
+  font-style: Georgia;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -209,4 +210,8 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2.5rem;
+}
+.bodee .list {
+  display: flex;
+  flex-direction: column;
 }
